@@ -1,0 +1,103 @@
+{
+  "checkerboard": {
+    "square_columns": 10,
+    "square_rows": 8,
+    "inner_corner_columns": 9,
+    "inner_corner_rows": 7,
+    "square_size_mm": 20.0
+  },
+  "image_resolution": {
+    "width": 960,
+    "height": 1280
+  },
+  "image_counts": {
+    "total": 24,
+    "successful": 24,
+    "failed": 0
+  },
+  "successful_image_names": [
+    "calibration_001.jpeg",
+    "calibration_002.jpeg",
+    "calibration_003.jpeg",
+    "calibration_004.jpeg",
+    "calibration_005.jpeg",
+    "calibration_006.jpeg",
+    "calibration_007.jpeg",
+    "calibration_008.jpeg",
+    "calibration_009.jpeg",
+    "calibration_010.jpeg",
+    "calibration_011.jpeg",
+    "calibration_012.jpeg",
+    "calibration_013.jpeg",
+    "calibration_014.jpeg",
+    "calibration_015.jpeg",
+    "calibration_016.jpeg",
+    "calibration_017.jpeg",
+    "calibration_019.jpeg",
+    "calibration_020.jpeg",
+    "calibration_021.jpeg",
+    "calibration_022.jpeg",
+    "calibration_024.jpeg",
+    "calibration_027.jpeg",
+    "calibration_028.jpeg"
+  ],
+  "failed_image_names": [],
+  "camera_matrix": [
+    [
+      991.5514750894756,
+      0.0,
+      490.89708498107177
+    ],
+    [
+      0.0,
+      991.2288741899393,
+      634.4558211858294
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion_coefficients": [
+    0.28594971710431694,
+    -1.4343324183308228,
+    0.0011880010901481606,
+    -0.0007694982968452764,
+    2.100589752603068
+  ],
+  "errors": {
+    "opencv_calibration_rms_px": 0.49052713354880173,
+    "mean_reprojection_error_px": 0.48179304856855065,
+    "median_reprojection_error_px": 0.4821484041135333,
+    "minimum_reprojection_error_px": 0.25355744058186425,
+    "maximum_reprojection_error_px": 0.6251202146822845,
+    "maximum_error_image": "calibration_004.jpeg",
+    "per_image_reprojection_rmse_px": {
+      "calibration_004.jpeg": 0.6251202146822845,
+      "calibration_019.jpeg": 0.6082308942256595,
+      "calibration_009.jpeg": 0.5902862898914286,
+      "calibration_016.jpeg": 0.5804808369245913,
+      "calibration_024.jpeg": 0.5701609096904581,
+      "calibration_010.jpeg": 0.5637411086502544,
+      "calibration_008.jpeg": 0.5565674902468768,
+      "calibration_002.jpeg": 0.5514828282120067,
+      "calibration_020.jpeg": 0.5268871969524467,
+      "calibration_015.jpeg": 0.5208765116601255,
+      "calibration_014.jpeg": 0.514075240942134,
+      "calibration_022.jpeg": 0.4827501099490316,
+      "calibration_001.jpeg": 0.481546698278035,
+      "calibration_027.jpeg": 0.46400812028610844,
+      "calibration_005.jpeg": 0.45962185055223337,
+      "calibration_028.jpeg": 0.4545846133277301,
+      "calibration_007.jpeg": 0.4404389098801587,
+      "calibration_021.jpeg": 0.43503345730989146,
+      "calibration_013.jpeg": 0.4222406695339717,
+      "calibration_003.jpeg": 0.38515898713635227,
+      "calibration_011.jpeg": 0.37382669531860163,
+      "calibration_006.jpeg": 0.35179115414088036,
+      "calibration_017.jpeg": 0.35056493727209237,
+      "calibration_012.jpeg": 0.25355744058186425
+    }
+  }
+}
