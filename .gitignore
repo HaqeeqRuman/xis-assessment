@@ -1,0 +1,27 @@
+@'
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE files
+.vscode/
+.idea/
+
+# Windows files
+Thumbs.db
+Desktop.ini
+
+# Large calibration image collections
+calibration/images/
+calibration/detected_corners/
+calibration/rejected_images/
+
+# Generated visual outputs
+calibration/outputs/*.jpg
+calibration/outputs/*.jpeg
+calibration/outputs/*.png
+'@ | Set-Content .gitignore
