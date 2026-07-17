@@ -1,27 +1,196 @@
 @'
-# Python virtual environment
+# ============================================================
+# Python environments and cache
+# ============================================================
+
 .venv/
 venv/
+env/
 
-# Python cache
 __pycache__/
 *.py[cod]
+*$py.class
 
-# IDE files
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+
+# ============================================================
+# IDE and operating-system files
+# ============================================================
+
 .vscode/
 .idea/
 
-# Windows files
+.DS_Store
 Thumbs.db
 Desktop.ini
 
-# Large calibration image collections
-calibration/images/
-calibration/detected_corners/
-calibration/rejected_images/
 
-# Generated visual outputs
+# ============================================================
+# Temporary project files
+# ============================================================
+
+project_structure.txt
+project_structure_clean.txt
+
+*.tmp
+*.log
+
+
+# ============================================================
+# Calibration image collections
+# ============================================================
+
+calibration/images/*
+!calibration/images/.gitkeep
+
+calibration/detected_corners/*
+!calibration/detected_corners/.gitkeep
+
+calibration/rejected_images/*
+!calibration/rejected_images/.gitkeep
+
+# Generated calibration preview images
 calibration/outputs/*.jpg
 calibration/outputs/*.jpeg
 calibration/outputs/*.png
-'@ | Set-Content .gitignore
+
+# These remain trackable:
+# calibration/outputs/camera_calibration.npz
+# calibration/outputs/calibration_report.json
+
+
+# ============================================================
+# Large datasets
+# Keep only selected sample images
+# ============================================================
+
+dataset/raw/main_only/*
+!dataset/raw/main_only/.gitkeep
+!dataset/raw/main_only/main_0001.jpg
+!dataset/raw/main_only/main_0002.jpg
+
+dataset/raw/with_aruco/*
+!dataset/raw/with_aruco/.gitkeep
+!dataset/raw/with_aruco/aruco_0001.jpg
+!dataset/raw/with_aruco/aruco_0004.jpg
+
+dataset/raw/measurement_validation/*
+!dataset/raw/measurement_validation/.gitkeep
+!dataset/raw/measurement_validation/aruco_0002.jpg
+!dataset/raw/measurement_validation/aruco_0038.jpg
+
+
+# ============================================================
+# Undistorted dataset
+# ============================================================
+
+dataset/undistorted/all/*
+!dataset/undistorted/all/.gitkeep
+
+dataset/undistorted/main_only/*
+!dataset/undistorted/main_only/.gitkeep
+
+dataset/undistorted/with_aruco/*
+!dataset/undistorted/with_aruco/.gitkeep
+
+dataset/undistorted/measurement_validation/*
+!dataset/undistorted/measurement_validation/.gitkeep
+!dataset/undistorted/measurement_validation/aruco_0002.jpg
+!dataset/undistorted/measurement_validation/aruco_0003.jpg
+!dataset/undistorted/measurement_validation/aruco_0006.jpg
+!dataset/undistorted/measurement_validation/aruco_0007.jpg
+!dataset/undistorted/measurement_validation/aruco_00010.jpg
+
+
+# ============================================================
+# COCO dataset
+# Keep annotation JSON files, ignore large images and masks
+# ============================================================
+
+dataset/coco_raw/*
+!dataset/coco_raw/.gitkeep
+!dataset/coco_raw/annotations/
+!dataset/coco_raw/annotations/**
+
+dataset/coco_split/train/images/*
+!dataset/coco_split/train/images/.gitkeep
+
+dataset/coco_split/train/masks/*
+!dataset/coco_split/train/masks/.gitkeep
+
+dataset/coco_split/val/images/*
+!dataset/coco_split/val/images/.gitkeep
+
+dataset/coco_split/val/masks/*
+!dataset/coco_split/val/masks/.gitkeep
+
+dataset/coco_split/test/images/*
+!dataset/coco_split/test/images/.gitkeep
+
+dataset/coco_split/test/masks/*
+!dataset/coco_split/test/masks/.gitkeep
+
+# Keep annotation JSON files in each split
+!dataset/coco_split/train/annotations/
+!dataset/coco_split/train/annotations/**
+!dataset/coco_split/val/annotations/
+!dataset/coco_split/val/annotations/**
+!dataset/coco_split/test/annotations/
+!dataset/coco_split/test/annotations/**
+
+
+# ============================================================
+# Generated dataset previews
+# ============================================================
+
+dataset/mask_previews/*
+!dataset/mask_previews/.gitkeep
+
+
+# ============================================================
+# Trained models
+# ============================================================
+
+# Keep the final pretrained model:
+# models/outputs/best_unet.pt
+
+# Ignore temporary and secondary checkpoints
+models/outputs/latest_unet.pt
+models/outputs/checkpoint_*.pt
+models/outputs/checkpoint_*.pth
+models/outputs/*.ckpt
+
+# Do not add global *.pt or *.pth rules
+
+
+# ============================================================
+# Inference outputs
+# Keep selected examples only
+# ============================================================
+
+inference/outputs/*
+!inference/outputs/.gitkeep
+
+!inference/outputs/aruco_0002_overlay.jpg
+!inference/outputs/aruco_0002_comparison.jpg
+!inference/outputs/aruco_0002_predicted_mask.png
+!inference/outputs/aruco_0002_probability.jpg
+!inference/outputs/aruco_0002_undistorted.jpg
+
+
+# ============================================================
+# Measurement
+# ============================================================
+
+# Nothing under measurement/ is ignored.
+# The entire folder will be committed, including:
+# - Python scripts
+# - output images
+# - detection result images
+# - JSON and CSV reports
+# - reference marker PNG and PDF files
+'@ | Set-Content -Path ".gitignore" -Encoding utf8
