@@ -322,17 +322,12 @@ The complete large files must be hosted on Google Drive or OneDrive and linked b
 
 ## Large File Downloads
 
-> Replace the placeholder links before submission.  
-> All links must be configured as **Anyone with the link can view**.
+
 
 | Resource | Description | Download |
 |---|---|---|
-| Calibration Images | Full checkerboard image collection used for intrinsic calibration | [Google Drive / OneDrive Link](REPLACE_WITH_CALIBRATION_IMAGES_LINK) |
-| Full Dataset | Raw, resized, undistorted, and ArUco image collections | [Google Drive / OneDrive Link](REPLACE_WITH_FULL_DATASET_LINK) |
-| COCO Annotations | Complete CVAT COCO export | [Google Drive / OneDrive Link](REPLACE_WITH_COCO_ANNOTATIONS_LINK) |
-| Dataset Splits and Masks | Train, validation, and test images with generated masks | [Google Drive / OneDrive Link](REPLACE_WITH_DATASET_SPLITS_LINK) |
-| Trained U-Net Weights | Best model checkpoint used for evaluation and inference | [Google Drive / OneDrive Link](REPLACE_WITH_MODEL_WEIGHTS_LINK) |
-| Full Output Archive | Full inference, prediction, and measurement outputs | [Google Drive / OneDrive Link](REPLACE_WITH_OUTPUT_ARCHIVE_LINK) |
+| Dataset Images | Full checkerboard image collection used for intrinsic calibration | [https://drive.google.com/drive/folders/1HLIQDQJzazsaAJvh2DpSUpbicofkjoBu?usp=drive_link]() |
+|
 
 ---
 
