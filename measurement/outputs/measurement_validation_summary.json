@@ -1,0 +1,13 @@
+{
+  "total_images": 19,
+  "successful_images": 19,
+  "failed_images": 0,
+  "success_rate_percent": 100.0,
+  "long_side_mae_mm": 5.5835723876953125,
+  "short_side_mae_mm": 3.282451027318051,
+  "overall_mae_mm": 4.433011707506682,
+  "long_side_mpe_percent": 5.07597489790483,
+  "short_side_mpe_percent": 2.984046388470955,
+  "overall_mpe_percent": 4.030010643187892,
+  "mean_confidence_percent": 98.8639633906515
+}

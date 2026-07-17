@@ -1,0 +1,104 @@
+{
+  "input_image": "dataset\\undistorted\\measurement_validation\\aruco_0038.jpg",
+  "model_path": "E:\\xis-assessment\\models\\outputs\\best_unet.pt",
+  "calibration_path": null,
+  "already_undistorted": true,
+  "device": "cpu",
+  "threshold": 0.5,
+  "measurement_method": "planar_homography_from_aruco_marker",
+  "marker_dictionary": "DICT_4X4_50",
+  "marker_id": 8,
+  "marker_size_mm": 39.0,
+  "marker_corners_pixels": [
+    [
+      561.7590942382812,
+      350.0194396972656
+    ],
+    [
+      656.8848876953125,
+      466.2976989746094
+    ],
+    [
+      462.7771911621094,
+      512.106689453125
+    ],
+    [
+      387.5132141113281,
+      384.04443359375
+    ]
+  ],
+  "marker_diagnostics": {
+    "side_lengths_pixels": [
+      150.23165893554688,
+      199.4398651123047,
+      148.54159545898438,
+      177.53683471679688
+    ],
+    "average_side_pixels": 168.9374885559082,
+    "approximate_pixels_per_mm": 4.331730475792518
+  },
+  "image_to_metric_homography": [
+    [
+      0.1071733223286816,
+      0.548846825134046,
+      -252.31264669090945
+    ],
+    [
+      -0.33833527206679315,
+      0.27678786567563646,
+      93.18178232631588
+    ],
+    [
+      -8.914416729311115e-05,
+      0.0020509426278586076,
+      1.0
+    ]
+  ],
+  "long_side_mm": 114.2931900024414,
+  "short_side_mm": 112.70814514160156,
+  "contour_area_mm2": 12088.094897510167,
+  "object_center_metric_mm": [
+    47.748836517333984,
+    48.965728759765625
+  ],
+  "object_angle_degrees": -2.0039243698120117,
+  "metric_box_points_mm": [
+    [
+      -6.572475433349609,
+      108.04796600341797
+    ],
+    [
+      -10.569072723388672,
+      -6.175333499908447
+    ],
+    [
+      102.07014465332031,
+      -10.116506576538086
+    ],
+    [
+      106.06674194335938,
+      104.1067886352539
+    ]
+  ],
+  "image_box_points_pixels": [
+    [
+      27,
+      432
+    ],
+    [
+      565,
+      318
+    ],
+    [
+      938,
+      723
+    ],
+    [
+      164,
+      1024
+    ]
+  ],
+  "mean_foreground_confidence": 0.9900197386741638,
+  "output_image": "E:\\xis-assessment\\measurement\\outputs\\aruco_0038_measurement.jpg",
+  "output_mask": "E:\\xis-assessment\\measurement\\outputs\\aruco_0038_mask.png"
+}
