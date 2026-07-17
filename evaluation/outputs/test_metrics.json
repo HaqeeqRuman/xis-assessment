@@ -1,0 +1,37 @@
+{
+  "model_path": "E:\\xis-assessment\\models\\outputs\\best_unet.pt",
+  "dataset_split": "test",
+  "number_of_images": 10,
+  "device": "cpu",
+  "threshold": 0.5,
+  "input_width": 192,
+  "input_height": 256,
+  "checkpoint_epoch": 40,
+  "checkpoint_validation_dice": 0.9807818770408631,
+  "checkpoint_validation_iou": 0.9627650141716003,
+  "mean_per_image_metrics": {
+    "iou": 0.9618532051212677,
+    "dice": 0.9803047120003819,
+    "precision": 0.9784890690701454,
+    "recall": 0.9824659829195266,
+    "f1_score": 0.9803046620028619,
+    "accuracy": 0.9930033365865214,
+    "specificity": 0.9938131582345905,
+    "mean_foreground_confidence": 0.9867578506469726
+  },
+  "global_pixel_metrics": {
+    "iou": 0.9724167248161469,
+    "dice": 0.9860154931578041,
+    "precision": 0.981898876676697,
+    "recall": 0.9901667728385765,
+    "f1_score": 0.9860154431582845,
+    "accuracy": 0.9930033365883396,
+    "specificity": 0.9939443694826042
+  },
+  "confusion_matrix_pixels": {
+    "true_positive": 121238.0,
+    "true_negative": 366843.0,
+    "false_positive": 2235.0,
+    "false_negative": 1204.0
+  }
+}
